@@ -1,0 +1,16 @@
+<jboss-deployment-structure>
+	<deployment>	
+		<dependencies>
+			<module name="org.joda.time" />
+			<module name="org.hibernate" />
+			<module name="org.javassist" />
+			<module name="org.quartz" />
+			<module name="javax.faces.api" />
+		</dependencies>
+		 
+		<exclude-subsystems>
+			<subsystem name="webservices" />
+		</exclude-subsystems>	
+		 
+	</deployment>
+</jboss-deployment-structure>

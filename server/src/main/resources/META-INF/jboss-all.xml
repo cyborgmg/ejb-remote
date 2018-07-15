@@ -1,0 +1,15 @@
+<jboss umlns="urn:jboss:1.0">
+
+	<!-- É necessário especificar uma dependência à implantação do DBSDB.    -->
+	<!-- Esta configuração indica ao JBoss EAP que, para implantar esta      -->
+	<!-- aplicação, é necessário que o DBSDB já esteja implantado. Isto se   -->
+	<!-- torna necessário para que o JBoss EAP seja capaz de ordenar as      -->
+	<!-- implantaçõpes corretamente, de forma que ele seja capaz de detectar -->
+	<!-- as dependências entre EJBs e injetá-las. Se isto não for feito, a   -->
+	<!-- aplicação dependente poderá ser implantada, mas não irá ser         -->
+	<!-- iniciada. -->
+	<jboss-deployment-dependencies xmlns="urn:jboss:deployment-dependencies:1.0">
+		<dependency name="ejb-remote-lib.jar" />
+	</jboss-deployment-dependencies>
+	
+</jboss>
